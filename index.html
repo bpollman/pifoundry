@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pi Foundry — small apps &amp; projects</title>
+  <meta name="description" content="Pi Foundry — a home for small mobile apps and side projects by Bernard Pollman." />
+
+  <!-- Open Graph / social preview -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Pi Foundry — small apps &amp; projects" />
+  <meta property="og:description" content="A home for small mobile apps and side projects by Bernard Pollman." />
+  <meta property="og:url" content="https://www.pifoundry.com/" />
+  <meta property="og:image" content="https://www.pifoundry.com/assets/og-image.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="hero">
+    <div class="wrap hero-inner">
+      <span class="logo" aria-hidden="true">π</span>
+      <h1>Pi Foundry</h1>
+      <p class="tagline">Home of some little projects.</p>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <!-- About -->
+    <section class="about" id="about">
+      <h2>About</h2>
+      <p>
+        I'm <strong>Bernard Pollman</strong>, a developer who builds small, useful mobile
+        apps and side projects. This is where they live. A few are on the app stores, a few
+        are retired, and more are on the way.
+      </p>
+      <p class="links">
+        <a href="https://github.com/PiFoundry" rel="noopener">GitHub</a>
+        <span class="sep">·</span>
+        <a href="mailto:bpollman@gmail.com">bpollman@gmail.com</a>
+      </p>
+    </section>
+
+    <!-- Projects -->
+    <section class="projects" id="projects">
+      <h2>Projects</h2>
+      <div class="grid">
+
+        <!-- Ooooby (live, iOS + Android) -->
+        <article class="card">
+          <div class="card-icon" aria-hidden="true">🥕</div>
+          <h3>Ooooby</h3>
+          <p class="card-desc">
+            The unofficial app of Ooooby — local food out of our own backyards.
+            See what's in this week's veggie box and what's coming next week.
+          </p>
+          <div class="store-buttons">
+            <a class="btn btn-store" rel="noopener"
+               href="https://apps.apple.com/au/app/ooooby-veggie-box/id1254380183">
+              <span class="btn-sub">Download on the</span>
+              <span class="btn-main">App Store</span>
+            </a>
+            <a class="btn btn-store" rel="noopener"
+               href="https://play.google.com/store/apps/details?id=com.piFoundry.android.ooooby">
+              <span class="btn-sub">Get it on</span>
+              <span class="btn-main">Google Play</span>
+            </a>
+          </div>
+        </article>
+
+        <!-- Traffic Jammery (archived) -->
+        <article class="card card-archived">
+          <div class="card-icon" aria-hidden="true">🚦</div>
+          <h3>Traffic Jammery</h3>
+          <p class="card-desc">
+            Quick access to the WSDOT's Seattle-area traffic info from your Android phone.
+          </p>
+          <div class="store-buttons">
+            <span class="badge">Archived · no longer available</span>
+          </div>
+          <p class="card-note">Formerly on Google Play (com.piFoundry.android.trafficJammery).</p>
+        </article>
+
+        <!--
+          ===== TEMPLATE: copy this block to add a new project =====
+
+          Live app (with store buttons):
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">✨</div>
+            <h3>App Name</h3>
+            <p class="card-desc">One-line description of the app.</p>
+            <div class="store-buttons">
+              <a class="btn btn-store" rel="noopener" href="APP_STORE_URL">
+                <span class="btn-sub">Download on the</span>
+                <span class="btn-main">App Store</span>
+              </a>
+              <a class="btn btn-store" rel="noopener" href="PLAY_STORE_URL">
+                <span class="btn-sub">Get it on</span>
+                <span class="btn-main">Google Play</span>
+              </a>
+            </div>
+          </article>
+
+          Archived app (badge instead of buttons): add class "card-archived"
+          to the <article> and replace store-buttons with:
+            <div class="store-buttons"><span class="badge">Archived · no longer available</span></div>
+          ==========================================================
+        -->
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <p>&copy; <span id="year">2026</span> Pi Foundry · Bernard Pollman</p>
+      <p>
+        <a href="privacy-policy.html">Privacy Policy</a>
+        <span class="sep">·</span>
+        <a href="mailto:bpollman@gmail.com">Contact</a>
+      </p>
+    </div>
+  </footer>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
