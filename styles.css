@@ -73,23 +73,37 @@ a:hover { color: var(--accent-hover); text-decoration: underline; }
   text-align: center;
 }
 .hero-inner { display: flex; flex-direction: column; align-items: center; }
-.logo {
-  display: inline-grid;
-  place-items: center;
-  width: 76px; height: 76px;
-  border-radius: 20px;
-  background: var(--accent);
-  color: #fff;
-  font-size: 44px;
-  font-weight: 700;
-  line-height: 1;
+
+/* Logo wordmark on a white plate so the black lettering stays legible
+   in both light and dark mode. */
+.logo-plate {
+  display: inline-block;
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 22px 32px;
   box-shadow: var(--shadow);
   margin-bottom: 22px;
+}
+.logo {
+  display: block;
+  width: clamp(220px, 44vw, 340px);
+  height: auto;
 }
 .hero h1 {
   margin: 0;
   font-size: clamp(2.2rem, 6vw, 3.4rem);
   letter-spacing: -0.02em;
+}
+
+/* Accessible heading kept for SEO/screen readers, hidden visually */
+.visually-hidden {
+  position: absolute;
+  width: 1px; height: 1px;
+  padding: 0; margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
 }
 .tagline {
   margin: 10px 0 0;
